@@ -1,4 +1,4 @@
-# Proyecto Integrador
+# Proyecto Integrador #1
 ##### Esta actividad contiene un analizador de sentimientos utilizando el api de [twitter](https://developer.twitter.com), en base a un término de busqueda ingresado por el usuario. Reconoce los twits positivos o negativos; además de clasificarlos por ubicación geográfica.
 
 Utilizando la librera nltk en conjunto con las librerías ... el programa recibe un query utilizando el api de twitter, realizando las busqueda de twitts, y tokenizando el stream de salida, ...
