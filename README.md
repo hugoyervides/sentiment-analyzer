@@ -47,7 +47,7 @@ Las twits utilizadas son extraidos de un query desde el api de [twitter](https:/
 * [hugoyervides](https://github.com/hugoyervides)
 * Astrid
 * [olefran](https://github.com/olefran)
-* 
+* [Felipe Villaseñor](https://github.com/Felipev201)
 
 En caso de estar interesado en una introducción al procesamiento de lenguaje, o analizador de sentimientos:
 - [NLTK Tutorial by sentdex](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
