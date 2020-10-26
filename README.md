@@ -46,6 +46,18 @@ twitterStream.filter(locations=[-15.258424824,-33.8737847792,37.7103108709,36.31
 ![](Numero_total.png)
 ![](Porcentaje.png) 
  
+ Los tweets de distintos continentes/zones del mundo fueron recolectados entre las 7 p.m. y las 8:30 p.m. hora del centro de México.
+ Las zonas analizadas fueron las siguientes
+ * America del Norte (N-A)
+ * America del Sur (S-A)
+ * Asia
+ * Medio Oriente (M-E)
+ * America central (C-A)
+ * África
+ * Europe
+Los tweets fueron calificados como positivos o negativos basados en su contenido. La gráfica de la izquierda muestra el número total de tweets negativos y positivos por continente/zona durante el periodo mencionado, mientras que la gráfica de la derecha muestra el porcentaje de tweets positivos por cada continente/zona.
+
+ 
 ##### Contribuidores
 * [GustavoDLRA](https://github.com/GustavoDLRA)
 * [hugoyervides](https://github.com/hugoyervides)
