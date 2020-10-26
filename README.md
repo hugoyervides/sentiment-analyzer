@@ -22,42 +22,55 @@ Los twits utilizados son extraidos de un query desde el api de twitter con la li
 twitterStream = Stream(auth, listener())
 twitterStream.filter(locations=[-15.258424824,-33.8737847792,37.7103108709,36.3118596404])
 ```
-2. Almacenar el contenido.
+2. Evaliuar el sentimiento.
 
 ```
-
-```
-3. 
-
-```
-
-```
-4. 
-
+def sentiment(text):
+    feats = find_features(text)
+    return voted_classifier.classify(feats), voted_classifier.confidence(feats)
 ```
 
-```
-5. 
+3. Almacenar el resultado (sentimiento) en archivo.
 
 ```
+ sentiment_value, confidence = s.sentiment(tweet)
+        print(tweet, sentiment_value, confidence)
+        
+        if confidence*100 >= 80:
+            output = open("data/twitter-africa.txt","a")
+            output.write(sentiment_value)
+```
+
+4. Grafica los resultados del los archivos.
 
 ```
+def animate(i):
+    pullData = open("twitter-out.txt","r").read()
+    lines = pullData.split('\n')
+    
+    xar = []
+    yar = []
+    
+    x = 0
+    y = 0
+    
+    for l in lines[-200:]:
+        x += 1
+        if "pos" in l:
+            y += 1
+        elif "neg" in l:
+            y -= 1 #modifiable based on the bias. 
+            
+        xar.append(x)
+        yar.append(y)
+    
+    ax1.clear()
+    ax1.plot(xar,yar)
+```
+
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
 ![](Numero_total.png)
 ![](Porcentaje.png) 
- 
- Los tweets de distintos continentes/zones del mundo fueron recolectados entre las 7 p.m. y las 8:30 p.m. hora del centro de México.
- Las zonas analizadas fueron las siguientes
- * America del Norte (N-A)
- * America del Sur (S-A)
- * Asia
- * Medio Oriente (M-E)
- * America central (C-A)
- * África
- * Europa
-
-Los tweets fueron calificados como positivos o negativos basados en su contenido. La gráfica de la izquierda muestra el número total de tweets negativos y positivos por continente/zona durante el periodo mencionado, mientras que la gráfica de la derecha muestra el porcentaje de tweets positivos por cada continente/zona.
-
  
 ##### Contribuidores
 * [GustavoDLRA](https://github.com/GustavoDLRA)
