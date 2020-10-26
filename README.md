@@ -41,7 +41,16 @@ def sentiment(text):
             output.write(sentiment_value)
 ```
 
-4. [Grafica](Gen de graficas.ipynb) los resultados del los archivos.
+4. Grafica los resultados del los archivos.
+
+```
+ sentiment_value, confidence = s.sentiment(tweet)
+        print(tweet, sentiment_value, confidence)
+        
+        if confidence*100 >= 80:
+            output = open("data/twitter-africa.txt","a")
+            output.write(sentiment_value)
+```
 
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
 ![](Numero_total.png)
