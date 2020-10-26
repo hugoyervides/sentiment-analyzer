@@ -1,20 +1,21 @@
 # Proyecto Integrador #1
 ##### Esta actividad contiene un analizador de sentimientos utilizando el api de [twitter](https://developer.twitter.com), en base a un término de busqueda ingresado por el usuario. Reconoce los twits positivos o negativos; además de clasificarlos por ubicación geográfica.
 
-Utilizando la librera nltk en conjunto con las librerías ... el programa recibe un query utilizando el api de twitter, realizando las busqueda de twitts, y tokenizando el stream de salida, ...
+Utilizando la librera nltk en conjunto con las librerías, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de twitts por cordenada, y tokenizando el stream de salida. Despues de ello el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 twits).
 
 El código en el jupyter notebook, muestra los URLs minados, así como aquellos que son descargados. 
 
 Consideramos en base al programa y su presentación que presentaría un buen punto de partida para aquellos interesados en desarrollar un analizador de sentimientos de twits, u bases de datos de terceras personas.
 
 ##### Representación y fuente de datos. 
-Las twits utilizadas son extraidos de un query desde el api de [twitter](https://developer.twitter.com) y analizados por la herramienta [nltk](https://www.nltk.org/).
+Los twits utilizados son extraidos de un query desde el api de twitter con la libreria [tweepy](https://www.tweepy.org/),  y analizados por la herramienta [nltk](https://www.nltk.org/).
 
 ##### Dependencias 
 1. nltk
+2. tweepy
 
 ##### Algoritmo
-1. Pedir al usuario por un query de python.
+1. Busqueda de streams de twitts por ubcación geogŕafica.
 
 ```
 
@@ -39,7 +40,7 @@ Las twits utilizadas son extraidos de un query desde el api de [twitter](https:/
 ```
 
 ```
-##### Las imagenes son distribuidas en sus respectivas carpetas de test_images y train_images.
+##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
 ![]()
  
 ##### Contribuidores
@@ -56,4 +57,5 @@ En caso de estar interesado en una introducción al procesamiento de lenguaje, o
 Para aprovechar al máximo este repositorio y poder editarlo al momento de descargarlo se recomienda el uso de Jupyter Notebook mediante Anaconda: 
 1. Instalar [Anaconda](https://www.anaconda.com/products/individual)
 2. Instalar [nltk](https://www.nltk.org/).
+3. Instalar [tweepy](https://www.tweepy.org/)
 2. Abrir Jupyter Notebook
