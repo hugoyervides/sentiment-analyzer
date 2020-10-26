@@ -54,7 +54,7 @@ twitterStream.filter(locations=[-15.258424824,-33.8737847792,37.7103108709,36.31
  * Medio Oriente (M-E)
  * America central (C-A)
  * África
- * Europe
+ * Europa
 
 Los tweets fueron calificados como positivos o negativos basados en su contenido. La gráfica de la izquierda muestra el número total de tweets negativos y positivos por continente/zona durante el periodo mencionado, mientras que la gráfica de la derecha muestra el porcentaje de tweets positivos por cada continente/zona.
 
