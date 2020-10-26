@@ -1,7 +1,7 @@
 # Proyecto Integrador #1
 ##### Esta actividad contiene un analizador de sentimientos utilizando el api de [twitter](https://developer.twitter.com), en base a un término de busqueda ingresado por el usuario. Reconoce los twits positivos o negativos; además de clasificarlos por ubicación geográfica.
 
-Utilizando la librera nltk en conjunto con las librerías, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de twitts por cordenada, y tokenizando el stream de salida. Despues de ello el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 twits).
+Utilizando la librera nltk en conjunto con las librerías, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de twitts por cordenada, y tokenizando el stream de salida. Despues de ello, el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 twits).
 
 El código en el jupyter notebook, muestra los URLs minados, así como aquellos que son descargados. 
 
@@ -18,9 +18,11 @@ Los twits utilizados son extraidos de un query desde el api de twitter con la li
 1. Busqueda de streams de twitts por ubcación geogŕafica.
 
 ```
-
+# Search of African twiits
+twitterStream = Stream(auth, listener())
+twitterStream.filter(locations=[-15.258424824,-33.8737847792,37.7103108709,36.3118596404])
 ```
-2. 
+2. Almacenar el contenido.
 
 ```
 
@@ -59,4 +61,12 @@ Para aprovechar al máximo este repositorio y poder editarlo al momento de desca
 1. Instalar [Anaconda](https://www.anaconda.com/products/individual)
 2. Instalar [nltk](https://www.nltk.org/).
 3. Instalar [tweepy](https://www.tweepy.org/)
-2. Abrir Jupyter Notebook
+4. Remplazar la key, comsumer secret, access token y access secret en los archivos bot_\*.py (obtenido de una cuenta developer de twitter)
+```
+#consumer key, consumer secret, access token, access secret.
+ckey=""
+csecret=""
+atoken=""
+asecret=""
+```
+5. Abrir Jupyter Notebook
