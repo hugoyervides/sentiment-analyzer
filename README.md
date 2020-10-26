@@ -41,7 +41,8 @@ Los twits utilizados son extraidos de un query desde el api de twitter con la li
 
 ```
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
-![]()
+![](Numero_total.png)
+![](Porcentaje.png) 
  
 ##### Contribuidores
 * [GustavoDLRA](https://github.com/GustavoDLRA)
