@@ -41,7 +41,7 @@ def sentiment(text):
             output.write(sentiment_value)
 ```
 
-4. Grafica[Gen de graficas.ipynb] los resultados del los archivos.
+4. [Grafica](Gen de graficas.ipynb) los resultados del los archivos.
 
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
 ![](Numero_total.png)
