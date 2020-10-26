@@ -1,5 +1,5 @@
 # Proyecto Integrador #1
-##### Esta actividad contiene un analizador de sentimientos utilizando el api de [twitter](https://developer.twitter.com), en base a un término de busqueda ingresado por el usuario. Reconoce los tweets positivos o negativos; además de clasificarlos por ubicación geográfica.
+##### Esta actividad contiene un analizador de sentimientos utilizando el api de [twitter](https://developer.twitter.com), en base a un término de busqueda, reconoce los tweets positivos o negativos; además de clasificarlos por ubicación geográfica.
 
 Utilizando la librera nltk en conjunto con tweep, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de tweets emitidos en un rango de coordenadas, y tokenizando el stream de salida. Despues de ello, el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 tweets).
 
