@@ -3,7 +3,7 @@
 
 Utilizando la librera nltk en conjunto con tweep, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de tweets emitidos en un rango de coordenadas, y tokenizando el stream de salida. Despues de ello, el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 tweets).
 
-El código en el jupyter notebook, muestra los URLs minados, así como aquellos que son descargados. 
+Los scripts . 
 
 Consideramos en base al programa y su presentación que presentaría un buen punto de partida para aquellos interesados en desarrollar un analizador de sentimientos de twits, u bases de datos de terceras personas.
 
@@ -44,12 +44,17 @@ def sentiment(text):
 4. Grafica los resultados del los archivos.
 
 ```
- sentiment_value, confidence = s.sentiment(tweet)
-        print(tweet, sentiment_value, confidence)
-        
-        if confidence*100 >= 80:
-            output = open("data/twitter-africa.txt","a")
-            output.write(sentiment_value)
+continent=['N-A','S-A','Asia','M-E','C-A','Africa','Europe']
+Positive=[NA_positive,SA_positive,Asia_positive,ME_positive,CA_positive,AFRICA_positive,EUROPE_positive]
+Negative=[NA_negative,SA_negative,Asia_negative,ME_negative,CA_negative,AFRICA_negative,EUROPE_negative]
+xpos = np.arange(len(continent))
+
+plt.bar(xpos-0.2,Positive,label='positive',width=0.4)
+plt.bar(xpos+0.2,Negative,label='negative',width=0.4)
+plt.xticks(xpos,continent)
+plt.ylabel('Number of tweets')
+plt.title('Sentiment analysis in different continents/areas')
+plt.legend()
 ```
 
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
