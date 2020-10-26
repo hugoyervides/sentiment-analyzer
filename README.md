@@ -72,7 +72,7 @@ def animate(i):
 ![](Numero_total.png)
 ![](Porcentaje.png) 
  
- Los tweets de distintos continentes/zonas del mundo fueron recolectados entre las 7 p.m. y las 8:30 p.m. hora del centro de México.
+ Los tweets de distintos continentes/zonas del mundo fueron recolectados el domingo 25 de Octubre entre las 7 p.m. y las 8:30 p.m. hora del centro de México.
  Las zonas analizadas fueron las siguientes
  * América del Norte (N-A)
  * América del Sur (S-A)
