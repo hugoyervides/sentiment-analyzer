@@ -3,7 +3,7 @@
 
 Utilizando la librera nltk en conjunto con tweep, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de tweets emitidos en un rango de coordenadas, y tokenizando el stream de salida. Despues de ello, el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 tweets).
 
-Los scripts . 
+Los scripts dentro de project son bots encargados de la recolección de tweets. . 
 
 Consideramos en base al programa y su presentación que presentaría un buen punto de partida para aquellos interesados en desarrollar un analizador de sentimientos de twits, u bases de datos de terceras personas.
 
