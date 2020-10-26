@@ -11,8 +11,8 @@ Consideramos en base al programa y su presentación que presentaría un buen pun
 Los twits utilizados son extraidos de un query desde el api de twitter con la libreria [tweepy](https://www.tweepy.org/),  y analizados por la herramienta [nltk](https://www.nltk.org/).
 
 ##### Dependencias 
-1. nltk
-2. tweepy
+1. nltk.
+2. tweepy.
 
 ##### Algoritmo
 1. Busqueda de streams de twitts por ubcación geogŕafica.
@@ -62,14 +62,14 @@ plt.legend()
 ![](Porcentaje.png) 
  
  Los tweets de distintos continentes/zonas del mundo fueron recolectados el domingo 25 de Octubre entre las 7 p.m. y las 8:30 p.m. hora del centro de México.
- Las zonas analizadas fueron las siguientes
- * América del Norte (N-A)
- * América del Sur (S-A)
- * Asia
- * Medio Oriente (M-E)
- * América central (C-A)
- * África
- * Europa
+ Las zonas analizadas fueron las siguientes:
+ * América del Norte (N-A).
+ * América del Sur (S-A).
+ * Asia.
+ * Medio Oriente (M-E).
+ * América central (C-A).
+ * África.
+ * Europa.
 
 Los tweets fueron calificados como positivos o negativos basados en su contenido. La gráfica de la izquierda muestra el número total de tweets negativos y positivos por continente/zona durante el periodo mencionado, mientras que la gráfica de la derecha muestra el porcentaje de tweets positivos por cada continente/zona.
 
@@ -82,14 +82,14 @@ Los tweets fueron calificados como positivos o negativos basados en su contenido
 * [Felipe Villaseñor](https://github.com/Felipev201)
 
 En caso de estar interesado en una introducción al procesamiento de lenguaje, o analizador de sentimientos:
-- [NLTK Tutorial by sentdex](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
-- [Natural Language Processing Standford University Course](https://www.youtube.com/watch?v=mOAXEQevCAE&ab_channel=AutomationStepbyStep-RaghavPal)
+- [NLTK Tutorial by sentdex](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL).
+- [Natural Language Processing Standford University Course](https://www.youtube.com/watch?v=mOAXEQevCAE&ab_channel=AutomationStepbyStep-RaghavPal).
 
 Para aprovechar al máximo este repositorio y poder editarlo al momento de descargarlo se recomienda el uso de Jupyter Notebook mediante Anaconda: 
-1. Instalar [Anaconda](https://www.anaconda.com/products/individual)
+1. Instalar [Anaconda](https://www.anaconda.com/products/individual).
 2. Instalar [nltk](https://www.nltk.org/).
-3. Instalar [tweepy](https://www.tweepy.org/)
-4. Remplazar la key, comsumer secret, access token y access secret en los archivos bot_\*.py (obtenido de una cuenta developer de twitter)
+3. Instalar [tweepy](https://www.tweepy.org/).
+4. Remplazar la key, comsumer secret, access token y access secret en los archivos bot_\*.py (obtenido de una cuenta developer de twitter).
 ```
 #consumer key, consumer secret, access token, access secret.
 ckey=""
@@ -97,4 +97,4 @@ csecret=""
 atoken=""
 asecret=""
 ```
-5. Abrir Jupyter Notebook
+5. Abrir Jupyter Notebook.
