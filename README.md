@@ -81,6 +81,7 @@ def animate(i):
  * América central (C-A)
  * África
  * Europa
+
 Los tweets fueron calificados como positivos o negativos basados en su contenido. La gráfica de la izquierda muestra el número total de tweets negativos y positivos por continente/zona durante el periodo mencionado, mientras que la gráfica de la derecha muestra el porcentaje de tweets positivos por cada continente/zona.
 
  
