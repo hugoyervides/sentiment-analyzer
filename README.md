@@ -3,7 +3,7 @@
 
 Utilizando la librera nltk en conjunto con tweep, el programa recibe un stream utilizando el api de twitter, realizando las busqueda de tweets emitidos en un rango de coordenadas, y tokenizando el stream de salida. Despues de ello, el analizador de sentimientos clasifica el numero de comentarios positivos y negativos de cada continente. (El stream de twits varia de información por ser busqueda en tiempo real, y la cantidad varía por ubicación, se tiene un limite duro de 6,000 tweets).
 
-Los scripts dentro de project son bots encargados de la recolección de tweets. . 
+Los scripts dentro de project son bots encargados de la recolección de tweets. Estos escriben el sentimiento detectado en cada uno de los tweets de las diferentes regiones en su respectivo documento de texto. 
 
 Consideramos en base al programa y su presentación que presentaría un buen punto de partida para aquellos interesados en desarrollar un analizador de sentimientos de twits, u bases de datos de terceras personas.
 
@@ -18,7 +18,7 @@ Los twits utilizados son extraidos de un query desde el api de twitter con la li
 1. Busqueda de streams de twitts por ubcación geogŕafica.
 
 ```
-# Search of African twiits
+# Search of African tweets
 twitterStream = Stream(auth, listener())
 twitterStream.filter(locations=[-15.258424824,-33.8737847792,37.7103108709,36.3118596404])
 ```
