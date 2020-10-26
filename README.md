@@ -41,32 +41,7 @@ def sentiment(text):
             output.write(sentiment_value)
 ```
 
-4. Grafica los resultados del los archivos.
-
-```
-def animate(i):
-    pullData = open("twitter-out.txt","r").read()
-    lines = pullData.split('\n')
-    
-    xar = []
-    yar = []
-    
-    x = 0
-    y = 0
-    
-    for l in lines[-200:]:
-        x += 1
-        if "pos" in l:
-            y += 1
-        elif "neg" in l:
-            y -= 1 #modifiable based on the bias. 
-            
-        xar.append(x)
-        yar.append(y)
-    
-    ax1.clear()
-    ax1.plot(xar,yar)
-```
+4. Grafica[Gen de graficas.ipynb] los resultados del los archivos.
 
 ##### Las imagenes son graficas de humor de twitter por ubicación geográfica.
 ![](Numero_total.png)
